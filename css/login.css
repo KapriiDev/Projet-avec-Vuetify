@@ -1,0 +1,21 @@
+body {
+  background-color: white;
+}
+
+#app {
+  background-color: #fff;
+}
+
+.login-btn {
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #90ee90;
+  color: black;
+}
+
+.v-btn:hover {
+  background-color: #333 !important;
+  color: #fff !important;
+}

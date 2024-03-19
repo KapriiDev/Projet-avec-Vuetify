@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <!-- Vuetify CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/register.css">
+  </head>
+  <body>
+    <div id="app">
+      <v-app>
+        <v-content>
+          <v-container fluid>
+            <v-row align="center" justify="center">
+              <v-col cols="12" sm="8" md="4">
+                <v-card class="elevation-12">
+                  <v-toolbar color="primary" dark flat>
+                    <v-toolbar-title>Inscription</v-toolbar-title>
+                  </v-toolbar>
+                  <v-card-text>
+                    <v-form>
+                      <!-- Email -->
+                      <v-text-field v-model="email" label="Email" name="email" prepend-icon="mdi-email" type="email"></v-text-field>
+                      <!-- Mot de passe -->
+                      <v-text-field v-model="password" id="password" label="Mot de passe" name="password" prepend-icon="mdi-lock" type="password"></v-text-field>
+                      <!-- Confirmer le mot de passe -->
+                      <v-text-field v-model="password_confirmation" id="password_confirmation" label="Confirmer le mot de passe" name="password_confirmation" prepend-icon="mdi-lock" type="password"></v-text-field>
+                      <!-- Nom -->
+                      <v-text-field v-model="nom" id="nom" label="Nom" name="nom" prepend-icon="mdi-account" type="text"></v-text-field>
+                      <!-- Prénom -->
+                      <v-text-field v-model="prenom" id="prenom" label="Prénom" name="prenom" prepend-icon="mdi-account" type="text"></v-text-field>
+                      <!-- Adresse -->
+                      <v-text-field v-model="adresse" id="adresse" label="Adresse" name="adresse" prepend-icon="mdi-map-marker" type="text"></v-text-field>
+                      <!-- Code Postal -->
+                      <v-text-field v-model="code_postal" id="code_postal" label="Code postal" name="code_postal" prepend-icon="mdi-map-marker" type="text"></v-text-field>
+                      <!-- Ville -->
+                      <v-text-field v-model="ville" id="ville" label="Ville" name="ville" prepend-icon="mdi-map-marker" type="text"></v-text-field>
+                      <!-- Téléphone -->
+                      <v-text-field v-model="telephone" id="telephone" label="Téléphone" name="telephone" prepend-icon="mdi-phone" type="text"></v-text-field>
+                      <!-- Date de naissance -->
+                      <v-text-field v-model="date_naissance" id="date_naissance" label="Date de naissance" name="date_naissance" prepend-icon="mdi-calendar" type="text"></v-text-field>
+                    </v-form>
+                  </v-card-text>
+                  <v-card-actions>
+                    <v-spacer></v-spacer>
+                    <!-- Bouton Inscription -->
+                    <v-btn variant="outlined" color="primary" @click="inscription" class="inscription-btn">
+                      Inscription
+                    </v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-content>
+      </v-app>
+
+      <!-- Footer -->
+      <v-footer border>Kaprii - 2024</v-footer>
+    </div>
+
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <!-- Vuetify -->
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <!-- Script JS -->
+    <script src="app.js"></script>
+  </body>
+</html>
